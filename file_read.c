@@ -12,6 +12,7 @@ int main(void)
 	if (fd_read == -1)
 	{
 		printf("error to open read file");
+		return (-1);
 	}
 
 	printf("\n\n*******************************\n");
@@ -24,6 +25,5 @@ int main(void)
 	}
 	printf("\n*******************************\n\n");
 	close(fd_read);
-
 	return (0);
 }
